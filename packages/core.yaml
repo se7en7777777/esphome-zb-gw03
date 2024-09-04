@@ -12,14 +12,15 @@
 # GPIO33 I2C SDA 1
 
 substitutions:
-  name: zb-gw03
+  name: huayuiot-zigbee
 
 esphome:
   name: ${name}
+  name_add_mac_suffix: true
   comment: ${device_description}
   min_version: 2024.6.0
   project:
-    name: "syssi.esphome-zb-gw03"
+    name: "se7en.esphome-zb-gw03"
     version: 2.0.1
   on_boot:
     priority: 600
